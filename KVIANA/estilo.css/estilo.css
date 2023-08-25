@@ -1,0 +1,279 @@
+/* KVIANA meu Portfólio no CSS
+	## ESTILO GERAL ##*/
+    *{
+        font-family: 'Sarala', sans-serif;
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: #CCFCF7; /*verde bebê */
+        height: 100vh;
+        
+    }
+    
+    .interface{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    
+    .flex{
+        display: flex;
+    }
+    
+    .btn-contato button{
+        padding: 0px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #BE08DA;
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+    h2.titulo{
+        color: #AF088F;
+        font-size: 34px;
+        text-align: center;
+    }
+    
+    .btn-contato button:hover, form .btn-enviar input:hover{
+        box-shadow: 0px 0px 8px #E5DAF6;
+    }
+    
+    
+    /*	## ESTILO DO CABEÇALHO ##
+    */
+    header{
+        padding: 40px 4%;
+        
+    }
+    
+    header > .interface{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    header a{
+        color: #580664;
+        text-decoration: none;
+    }
+    
+    header a:hover{
+        color: #BE08DA;
+    }
+    
+    header nav ul{
+        list-style-type: none;
+    }
+    
+    .menu-desktop{
+        font-size: 20px;
+    }
+    
+    header nav ul li{
+        display: inline-block;
+        padding: 0 40px;
+    }
+    
+    
+    /*	## ESTILO DO TOPO DO SITE ## */
+    
+    section.topo-do-site{
+        padding: 40px 4%;
+    }
+    
+    section.topo-do-site .flex{
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    }
+    
+    .topo-do-site h1{
+        color: #AF088F;
+        font-size: 38px;
+        line-height: 40px;
+    }
+    
+    .topo-do-site .txt-topo-site p{
+        color: #1C0663;
+        margin: 40px 0;
+    }
+    
+    .topo-do-site .img-topo-do-site img{
+        position: relative;
+        animation: flutuar 2s ease-in-out infinite alternate;
+    }
+    
+    @keyframes flutuar{
+        0%{
+            top: 0;
+        }
+        100%{
+            top: 30px;
+        }
+    }
+    
+    
+    /*	## ESTILO DAS HABILIDADES ## */
+    
+    section.habilidades{
+        padding: 40px 4%;
+    }
+    
+    .topo-do-site .txt-topo-do-site p ul li{
+        color: #1C0663;
+        margin: 40px 0;
+    }
+    
+    /*	## ESTILO SOBRE ## */
+    
+    section.sobre{
+        padding: 80px 4%;
+    }
+    
+    section.sobre .flex{
+        align-items: center;
+        gap: 60px;
+    }
+    
+    .sobre{
+        color: #1C0663;
+    }
+    
+    .sobre .txt-sobre h2{
+        color: #AF088F;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .sobre .txt-sobre p{
+        margin: 20px 0;
+        text-align: justify;
+    }
+    
+    
+    /*	## ESTILO DE PORTFOLIO ##	*/
+    
+    section.portfolio{
+        padding: 80px 4%;
+        box-shadow: 0 0 40px 10px #F1F1F1;
+    }
+    
+    section.portfolio .flex{
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+    
+    .img-port{
+        width: 360px;
+        height: 460px;
+        background-size: cover;
+        background-position: 100% 0%;
+        border-radius: 40px;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .img-port:hover{
+        background-position: 100% 100%;
+    }
+    
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #BE08DA;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: #E5DAF6;
+        opacity: 0;
+        transition: .5s;
+    }
+    
+    .overlay:hover{
+        opacity: 1;
+    }
+    
+    
+    /*	## ESTILO FORMULARIO DE CONTATO ##	*/
+    
+    section.formulario{
+        padding: 80px 4%;
+    }
+    
+    form{
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 40px;
+    }
+    
+    form input, form textarea{
+        width: 100%;
+        background-color: #BE08DA40;
+        border: 0;
+        outline: 0;
+        padding: 20px 15px;
+        border-radius: 15px;
+        color: #1C0663;
+        font-size: 18px;
+    }
+    
+    form input::placeholder{
+        color: #E5DAF6;
+    }
+    
+    form textarea{
+        resize: none;
+        max-height: 200px;
+    }
+    
+    form textarea::placeholder{
+        color: #E5DAF6;
+    }
+    
+    form .btn-enviar{
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    form .btn-enviar input{
+        width: 120px;
+        background-color: #BE08DA;  /* botão */
+        color: #E5DAF6;  /* fonte */
+        font-weight: 700;
+        cursor: pointer;
+        transition: .2s;
+    }
+    
+    
+    /*	## ESTILO DE RODAPE ##	*/
+    
+    footer{
+        padding: 40px 4%;
+        box-shadow: 0 0 40px 10px #F1F1F1;
+    }
+    
+    footer .flex{
+        justify-content: space-between;
+    }
+
+    .btn-social-rodape {
+        text-align: end;
+    }
+    
+    
