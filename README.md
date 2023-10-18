@@ -1,5 +1,8 @@
 # 2modulo-AtividadePNT--HTML-CSS
-Atividade de HTML e CSS / II Módulo - Curso Técnico de Desenvolvimento de Sistemas
+
+# II Módulo
+
+Atividade de HTML e CSS / Curso Técnico de Desenvolvimento de Sistemas
 Disciplica: Programação Novas Tecnologias (PNT)
 
 **Todas as atividades desenvolvidas neste módulo estarão neste repositório**
