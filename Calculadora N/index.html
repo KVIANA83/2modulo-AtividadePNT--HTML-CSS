@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>CALCULADORA</title>
+  
+  <!-- CSS -->
+  
+  <link rel="stylesheet" type="text/css" href="/css/estilo.css"/>
+  
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  
+  <div class="calculadora">
+    <input type="text"id="inputBox" placeholder="0" />
+    <div class="calculadora-display">
+    </div> <!-- Fim div calculadora display -->
+    
+    <div class="calculadora-keys">
+      <button class="btn-apagar" data-action="apagar">C</button>
+      <button class="btn-especial" data-action=" ">( )</button>
+      <button class="btn-especial" data-action="percentual">%</button>
+      <button class="btn-especial" data-action="dividir">/</button>
+      
+      <button data-action="7">7</button>
+      <button data-action="8">8</button>
+      <button data-action="9">9</button>
+      <button class="btn-especial" data-action="multiplicar">*</button>
+      
+      <button data-action="4">4</button>
+      <button data-action="5">5</button>
+      <button data-action="6">6</button>
+      <button class="btn-especial" data-action="subtrair">-</button>
+      
+      <button data-action="1">1</button>
+      <button data-action="2">2</button>
+      <button data-action="3">3</button>
+      <button class="btn-especial" data-action="soma">+</button>
+      
+      <button class="btn-especial">+/-</button>
+      <button data-action="0">0</button>
+      <button class="btn-especial" data-action=" ">.</button>
+      <button class="btn-especial equal" data-action="resultado">=</button>
+      
+    </div> <!-- Fim div calculadora-keys -->
+  </div> <!-- Fim div calculadora -->
+   <script src="/js/script.js"></script>
+  
+</body>
+</html>
