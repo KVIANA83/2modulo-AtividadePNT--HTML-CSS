@@ -13,3 +13,6 @@ Criar um site com 5 páginas com menu funcional, formulário e rodapé.
 
 # 2° Atividade 
 Criar uma Calculadora
+Atividade em dupla: 
+Karine Viana 
+Matheus Costa 
