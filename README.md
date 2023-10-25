@@ -10,6 +10,7 @@ Disciplica: Programação Novas Tecnologias (PNT)
 
 # 1° Atividade
 Criar um site com 5 páginas com menu funcional, formulário e rodapé.
+Atividade Individual 
 
 # 2° Atividade 
 Criar uma Calculadora
