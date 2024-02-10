@@ -7,11 +7,10 @@
   }
   
   body{
-    background-color: #fff;
+    background-color: #ea5b5b;
     display: flex;
     align-items: center;
     justify-content: center;
-  
     height: 100vh;
     margin: 0;
     transition: background 0.2s linear;
@@ -19,7 +18,7 @@
   
   .calculadora{
     width: 250px;
-    height: 350px;
+    height: 360px;
     padding: 15px;
     position: absolute;
     top: 50%;
@@ -27,8 +26,8 @@
     border-radius: 10px;
     transform: translate(-50%, -50%);
     background-color: #ea5b5b; /* cor da calculadora */
+    box-shadow: 5px 5px 15px 5px #ffffff50;
   }
- 
 
  
   input{
@@ -36,9 +35,13 @@
     width: 220px;
     height: 80px;
     flex-direction: flex-start;
-    background-color: #fff;
+    background-color: #ea5b5b;
     font-size: 40px;
+    border: 1px solid transparent;
+    box-shadow: 2px 2px 5px 2px #ffffff50;
+    margin: 0 0 5px 0;
   }
+
   input::placeholder{
     color: #ffffff;
 }
@@ -53,11 +56,11 @@
   button{
     font-size: 20px;
     border-radius: 50px;
-    border-bottom: 1px solid #fff;
-    margin: 1px;
+    border: 1px solid transparent; 
+    margin: 2px;
     padding: 8px; 
     background-color: #ea5b5b;
-    box-shadow: #fff;
+    box-shadow: 1px 1px 5px 1px #ffffff50;
     color: #fff;
     cursor: pointer;
   }
@@ -74,3 +77,4 @@
    background-color: #EE9E9E;
   }
   
+
