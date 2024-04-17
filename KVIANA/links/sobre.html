@@ -1,102 +1,117 @@
 <!DOCTYPE html>
-<HTML lang="pt-br">
-
+<html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="widht= device-widht, initial-scale=1.0">
-	<title>KVIANA meu Portfólio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="../estilo.css/estilo.css">
 
-	<!-- GOOGLE FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+    <!-- JAVASCRIPT -->
+    <script src="../scripts/script.js" defer></script>
 
-	<!-- link para importar css -->
-	<link rel="stylesheet" type="text/css" href="/estilo.css/estilo.css">
-
+    <title>KVIANA Sobre</title>
 </head>
-
 <body>
-
-    <header>
-        <div class="interface"> <!-- Início div interface -->
-			<div class="logomarca">
-				<a href="#">
-					<img src="../images/Minha-logo.png" alt="Logo do meu Portfólio" style="width: 150px;">
-				</a>
-			</div>
-
-			<nav class="menu-desktop">
-				<ul>
-					<li><a href="index.html"><strong>Início</strong></a></li>
-					<li><a href="sobre.html"><strong>Sobre</strong></a></li>
-					<li><a href="habilidades.html"><strong>Minhas Habilidades</strong></a></li>
-					<li><a href="projetos.html"><strong>Meus Projetos</strong></a></li>
-				</ul>
-			</nav>
-
-			<div class="btn.contato">
-				<a href="#">
-					<button>Contato</button>
-				</a>
-			</div>
-        </div>  <!-- Final div interface -->
-    </header>
-
-    <main>
-        <section class="sobre">
-            <div class="interface"> <!-- Início div interface -->
-                <div class="flex"> <!-- Início div flex -->
-                    <div class="img-sobre"> <!-- Início div img-sobre -->
-                        <img src="../images/Minha-foto.png" alt="Minha Foto" style="width: 250px;">
-                    </div> <!-- Fim div img-sobre -->
-    
-    
-                    <div class="txt-sobre"> <!-- Início div txt-sobre -->
-                        <h2>Muito prazer, sou Karine!</h2>
-                        <p>Tenho 31 anos, sou estudante do curso desenvolvimento de sistemas. Busco aprimorar
-                            meus conhecimentos em bootcamps, cursos online, lendo artigos e realizando pesquisas.</p>
-                        <p>Meus pontos fortes é trabalho em equipe, ser proativa, ser dinâmica, ter determinação, foco e
-                            boa comunicação.
-                            Possuo conhecimento básico em design gráfico.</p>
-                    </div> <!-- Fim div txt-sobre -->
-    
-                </div> <!-- Fim div flex -->
-            </div> <!-- Fim div interface -->
-        </section>
-    </main>
-</body>
-
-
-<footer>
+  
+  <header>
     <div class="interface">
-        <div class="line-rodape">
-            <div class="flex">
-                <div class="logo-rodape">
-                    <a href="#">
-                        <img src="../images/Logo-rodape.png" alt="Logo do meu Portfólio" style="width: 150px;">
-                    </a>
-                </div> <!--Fim div logo-rodape-->
-            </div>  <!--Fim div flex-->
-        </div>  <!--Fim div line-rodape-->
-    </div>  <!--interface-->
-    
-    <div class="btn-social-rodape">
-        <a href="caldaskarine2@gmail.com">
-            <img src="../images/email.png" alt="E-mail" style="width: 50px;">
-        </a>
+        <div class="logo">
+            <a href="../links/index.html">
+              <img src="../images/Minha-logo.png" alt="Logo do meu Portfólio" style="width: 150px;">
+            </a>
+        </div><!--logo-->
 
-        <a href="https://www.linkedin.com/in/karine-viana-caldas-aa03a2194">
-            <img src="../images/LinkedIn.png" alt="LinkedIn" style="width: 50px;">
-        </a>
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+            </ul>
+        </nav>
 
-        <a href="https://github.com/KVIANA83">
-            <img src="../images/github.png" alt="Github" style="width: 50px;">
-        </a>
-    </div>
-</footer>
+        <div class="btn-contato">
+            <a href="#">
+                <button>Contato</button>
+            </a>
+        </div><!--btn-contato-->
 
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <i class="bi bi-x-lg"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="../links/index.html">Início</a></li>
+                    <li><a href="../links/habilidades.html">Habilidades</a></li>
+                    <li><a href="../links/sobre.html">Sobre</a></li>
+                    <li><a href="../links/projetos.html">Projetos</a></li>
+                    <li><a href="../links/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+        </div><!--menu-mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
+    </div><!--interface-->
 </header>
-</body>
 
-</HTML>
+  <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                  
+                    <div class="img-sobre">
+                      <img src="images/Persona.png" alt="Minha Persona" style="width: 250px;">                    
+                    </div><!--img-sobre-->
+                  
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU KARINE.</span></h2>
+                        <p>Olá! Meu nome é Karine Viana e tenho 32 anos. Atualmente, sou estudante do curso de Desenvolvimento de Sistemas, buscando constantemente aprimorar meus conhecimentos por meio de bootcamps, cursos online, leitura de artigos e pesquisas.</p>
+                        <p>Considero-me uma pessoa dedicada e apaixonada por trabalhar em equipe, sendo proativa e dinâmica. Tenho uma forte determinação, foco e habilidades de comunicação. Além disso, possuo conhecimentos básicos em design gráfico, o que complementa minha experiência e habilidades no desenvolvimento de sistemas.</p>                   
+                      <!--  <div class="btn-social">
+                            <a href="https://www.instagram.com/kviana83?igsh=aWI3bmNrcXN0amV5"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/KVIANA83"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/karine-viana-caldas-aa03a2194"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div> --><!--btn-social--> 
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+   <!-- RODAPÉ -->
+   <footer>
+    <div class="interface">
+        <div class="line-footer">
+            <div class="flex">
+                <div class="logo-footer">
+                  <img src="../images/Logo-rodape.png" alt="Logo do meu Portfólio" style="width: 150px;">
+                </div><!--logo-footer-->
+              
+                <div class="btn-social">
+                    <a href="https://www.instagram.com/kviana83?igsh=aWI3bmNrcXN0amV5"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="https://github.com/KVIANA83"><button><i class="bi bi-github"></i></button></a>
+                    <a href="https://www.linkedin.com/in/karine-viana-caldas-aa03a2194"><button><i class="bi bi-linkedin"></i></button></a>
+                </div><!--btn-social-->
+            </div>
+        </div><!--line-footer-->
+
+        <div class="line-footer borda">
+            <p><i class="bi bi-envelope-fill"></i> <a href="mailto:caldaskarine2@gmail.com">caldaskarine2@gmail.com</a></p>
+        </div><!--line-footer-->
+    </div><!--interface-->
+</footer>
+</body>
+</html>
